@@ -21,7 +21,7 @@ RUN apt-get install -y --allow-downgrades --allow-change-held-packages --no-inst
 
 RUN add-apt-repository ppa:deadsnakes/ppa -y
 RUN apt update
-RUN apt install python3.9
+RUN apt install python3.9 -y
 RUN apt-get install python3-pip -y
 
 RUN mkdir /notebooks
